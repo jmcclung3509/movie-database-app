@@ -1,0 +1,116 @@
+body {
+    font-size: 16px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0;
+    background-image: url("./images/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg");
+    background-size: cover;
+}
+
+.container {
+
+    width: 100%;
+
+
+}
+
+.layer {
+    background-color: rgba(245, 245, 249, 0.894);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Limelight', cursive;
+    font-size: 4rem;
+    margin: 50px 0 100px 0;
+}
+
+.movie-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    /* gap: 20px; */
+}
+
+.newMovie {
+    width: 22%;
+    margin-bottom: 50px;
+
+}
+
+.paragraph {
+    width: 80%;
+
+}
+
+
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.movie-btn:hover {
+    background-color: rgb(7, 91, 61);
+}
+
+.checkbox-container {
+    display: flex;
+    justify-self: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.star-check {
+    visibility: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+
+.star-check:before {
+    content: "\2606";
+    position: absolute;
+    visibility: visible;
+    color: black
+}
+
+.star-check:checked:before {
+    content: "\2605";
+    position: absolute;
+    color: rgb(209, 10, 186);
+}
+
+.rating {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
