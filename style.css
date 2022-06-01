@@ -26,7 +26,7 @@ h1 {
     text-align: center;
     font-family: 'Limelight', cursive;
     font-size: 4rem;
-    margin: 50px 0 100px 0;
+    margin: 50px 0 50px 0;
 }
 
 .movie-list-container {
@@ -38,13 +38,24 @@ h1 {
 }
 
 .newMovie {
-    width: 22%;
+    width: 24%;
     margin-bottom: 50px;
 
 }
 
-.paragraph {
+.data-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.date {
+    width: 100%;
+}
+
+.movie .paragraph {
     width: 80%;
+    margin: 10px 0;
 
 }
 
@@ -70,14 +81,20 @@ h1 {
 }
 
 .movie-btn:hover {
-    background-color: rgb(7, 91, 61);
+    background-color: rgb(48, 170, 48)
+}
+
+.kid-friendly {
+    color: rgb(48, 170, 48);
+    font-weight: 700;
+    margin-top: 0;
 }
 
 .checkbox-container {
     display: flex;
     justify-self: center;
     align-items: flex-start;
-    gap: 20px;
+    gap: 15px;
 }
 
 .star-check {
@@ -102,15 +119,32 @@ h1 {
     color: rgb(209, 10, 186);
 }
 
+
 .rating {
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
-.hide {
+/* .hide {
     display: none;
+} */
+
+.hide {
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+
+
 }
 
 .show {
     display: flex;
+    transition: opacity 1s;
+
+}
+
+.hide1 {
+
+    display: none;
+
 }
